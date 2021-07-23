@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prov.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://www.lexport.in/lexport/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="d1">
+        <div>
+            <a href="#">envatomarket</a>
+        </div>
+        <span>
+            <button>Buy&nbsp;Now</button>
+        </span>
+    </div>
+    <header id="T1">
+        <div id="dtitle1">
+            Ravi
+            <span class="c2">Ranjan</span>
+        </div>
+        <div class="t2">
+            <ul>
+                <li> <a href="#" class="_active">Home</a> </li>
+                <li> <a href="#">Resume</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Portfolio</a> </li>
+                <li> <a href="#">Blog</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+
+        </div>
+    </header>
+    <section>
+        <div class="middle1 c1">
+            <div class="m3">
+                <h1 class="m2">Ravi Ranjan</h1>
+                <h4 class="m2">FrontEnd-Developer</h4>
+                <div class="m2">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="https://lmpixels.com/demo/procard/images/photo.png">
+            </div>
+        </div>
+
+        <!--Second Part (Beginning) -->
+
+        <div class="last1">
+            <div>
+                <div>About
+                    <span class="js1 c2">Me</span>
+                </div>
+                <div>
+                    Hello! I’m Alex Smith. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum
+                    ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
+                </div>
+                <button>
+                    <p>DOWNLOAD RESUME</p>
+                </button>
+            </div>
+        </div>
+        <div class="details">
+            <ul>
+                <li>
+                    <span>Age</span>
+                    <span>24</span>
+                </li>
+                <li>
+                    <span>Residence</span>
+                    <span>Bihar</span>
+                </li>
+                <li>
+                    <span>Address</span>
+                    <span>Bazar Samiti, Patna</span>
+                </li>
+                <li>
+                    <span>e-mail</span>
+                    <span class="c2">3ravi5@gmail.com</span>
+                </li>
+                <li>
+                    <span>Phone</span>
+                    <span>9876789845</span>
+                </li>
+                <li>
+                    <span>Freelance</span>
+                    <span>Available</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div onclick="hello()" class="icon" id="im1">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+    </div>
+    <div id="side">
+        <p>Main Color</p>
+        <a href="#">
+            <div onclick="color_q1()" style="background-color: #7e6df6;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q2()" style="background-color: #f44336;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q3()" style="background-color: #2196f3;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q4()" style="background-color: #ff5722;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q5()" style="background-color: #2eca7f;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q6()" style="background-color: #29b6f6;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q7()" style="background-color: #e91e63;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q8()" style="background-color: #f3e7fa;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <a href="#">
+            <div onclick="color_q9()" style="background-color: #ff9800;">
+                <i style="display: none; color: white;" class="fa fa-check"></i>
+            </div>
+        </a>
+        <div><a href="#">Buy Now</a></div>
+    </div>
+
+</body>
+<script>
+
+    var a = document.getElementById("side");
+    var b = 0;
+    function hello() {
+        if (b == 0) {
+            a.classList.add("menu");
+            b = 1;
+        }
+        else if (b == 1) {
+            a.classList.remove("menu");
+            b = 0;
+        }
+    }
+
+    var k = document.getElementsByClassName("c1");
+    var l = document.getElementsByClassName("c2");
+    function color_q1() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#7e6df6";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#7e6df6";
+            }
+        }
+        document.querySelectorAll("#side i")[0].classList.add("checkIcon");
+    }
+    function color_q2() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#f44336";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#f44336";
+            }
+        }
+        document.querySelectorAll("#side i")[1].classList.add("checkIcon");
+    }
+    function color_q3() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#2196f3";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#2196f3";
+            }
+        }
+        document.querySelectorAll("#side i")[2].classList.add("checkIcon");
+    }
+    function color_q4() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#ff5722";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#ff5722";
+            }
+        }
+        document.querySelectorAll("#side i")[3].classList.add("checkIcon");
+    }
+    function color_q5() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#2eca7f";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#2eca7f";
+            }
+        }
+        document.querySelectorAll("#side i")[4].classList.add("checkIcon");
+    }
+    function color_q6() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#29b6f6";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#29b6f6";
+            }
+        }
+        document.querySelectorAll("#side i")[5].classList.add("checkIcon");
+    }
+    function color_q7() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#e91e63";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#e91e63";
+            }
+        }
+        document.querySelectorAll("#side i")[6].classList.add("checkIcon");
+    }
+    function color_q8() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#f3e7fa";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#f3e7fa";
+            }
+        }
+        document.querySelectorAll("#side i")[7].classList.add("checkIcon");
+    }
+    function color_q9() {
+        for (var i = 0; i < k.length; i++) {
+            k[i].style.backgroundColor = "#ff9800";
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.color = "#ff9800";
+            }
+        }
+        document.querySelectorAll("#side i")[8].classList.add("checkIcon");
+    }
+
+    // Slect Nab Tab Active Deactive
+    $('.t2 a').click(function () {
+        $('.t2 a._active').removeClass('_active');
+        $(this).addClass('_active');
+    });
+
+</script>
+
+</html>

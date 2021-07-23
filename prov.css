@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes roll1 {
+    0% {
+        transform: rotate(0.5turn);
+    }
+    50% {
+        transform: rotate(0.8turn);
+    }
+    100% {
+        transform: rotate(0.9turn);
+    }
+}
+
+body {
+    background-image: url(https://lmpixels.com/demo/procard/images/sp_main_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(228, 228, 228);
+}
+
+.d1 {
+    position: sticky;
+    top: 0;
+    background-color: #262626;
+    padding: 15px 0 15px 0;
+    height: 54px;
+    z-index: 4;
+}
+
+.d1 div {
+    position: absolute;
+    left: 22px;
+    top: 18px;
+    background: url(https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 150px;
+}
+
+.d1 span {
+    margin-right: 19px;
+    float: right;
+    margin-top: -3px;
+}
+
+.d1 span button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 4px;
+    line-height: 8px;
+    background-color: #82b440;
+    color: white;
+    cursor: pointer;
+}
+
+.d1 div a {
+    text-indent: -999px;
+    display: inline-block;
+}
+
+#T1 {
+    position: sticky;
+    top: 55px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin: 0;
+    padding: 0 0 15px 0;
+    z-index: 4;
+    transition: all 1s ease-in-out;
+    font-size: 21px;
+}
+
+#dtitle1 {
+    color: #49515d;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 110px;
+}
+
+#T1 div span {
+    color: #2eca7f;
+}
+
+.t2 {
+    float: right;
+}
+
+.t2 ul {
+    margin-top: 15px;
+    margin-right: 180px;
+}
+
+.t2 ul li {
+    display: inline-block;
+}
+
+.t2 ul li a {
+    text-decoration: none;
+    margin: 10px 35px 0 0;
+    font-size: 16.5px;
+    color: #49515d;
+    text-align: center;
+}
+
+.middle1 {
+    position: relative;
+    top: 50px;
+    width: 70vw;
+    height: 280px;
+    margin: auto;
+    background-color: #2eca7f;
+    background-image: url(https://lmpixels.com/demo/procard/images/sp_main_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.middle1 .m3 {
+    width: 50%;
+    text-align: center;
+    float: right;
+    position: relative;
+    top: 90px;
+    right: 125px;
+    line-height: 42px;
+    color: white;
+}
+
+.m3 h1 {
+    font-size: 60px;
+    margin: 0 0 10px 0;
+}
+
+h4.m2 {
+    font-size: 18px;
+}
+
+.m2 a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    color: rgb(175, 175, 175);
+    font-size: 16px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.m2 a i:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.image1 {
+    width: 25%;
+    background-color: white;
+    position: relative;
+    top: 35px;
+    left: 35px;
+}
+
+.image1:hover {
+    top: 30px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 3px 21px 0;
+}
+
+.image1 img {
+    width: 100%;
+    border: 2px solid white;
+}
+
+.last1 {
+    width: 70vw;
+    height: 360px;
+    margin: auto;
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.last1>div {
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    left: 50px;
+}
+
+.last1 div div:nth-child(1) {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 10px 5px -3px;
+}
+
+.js1 {
+    color: #2eca7f;
+}
+
+.last1 div div:nth-child(2) {
+    width: 469px;
+    font-size: 17px;
+    word-spacing: 1px;
+    line-height: 20px;
+    margin: 10px 10px 30px -3px;
+}
+
+.last1 button {
+    /* position: relative;
+    top: 0;
+    right: 0; */
+    border-radius: 5px;
+    background-color: white;
+    /* box-shadow: 2px 3px 9px 0; */
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+    padding: 5px 8px;
+}
+
+.last1 button:hover {
+    transition: 100ms;
+    /* box-shadow: 2px 6px 15px 0; */
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 30%);
+}
+
+.details {
+    float: right;
+    position: relative;
+    bottom: 260px;
+    right: 420px;
+    font-size: 16px;
+}
+
+.details ul {
+    display: inline-block;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 19px;
+}
+
+.details ul li span {
+    display: inline-block;
+    margin: 2px;
+    text-align: left;
+    width: 145px;
+}
+
+.details ul li span:nth-child(2) {
+    color: grey;
+}
+
+.m2 a {
+    text-decoration: none;
+}
+
+#im1 {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+#im1 i{
+    transition:all 300ms linear;
+}
+
+#im1:hover i{
+    /* animation: roll1 100ms 3; */
+    transform: rotate(180deg);
+}
+
+#side {
+    position: fixed;
+    right: -190px;
+    top: 38%;
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    background-color: whitesmoke;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#side p {
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+#side a {
+    text-decoration: none;
+}
+
+#side a div {
+    content: "";
+    display: inline-block;
+    width: 28%;
+    height: 30px;
+    line-height: 30px;
+    margin: 4px 1.5px;
+    vertical-align: top;
+}
+
+#side div a {
+    float: left;
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #2eca7f;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    margin: 20px 0 7px 8px;
+}
+
+.menu {
+    margin-right: 190px;
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.menu2 {
+    margin-right: -190px;
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.checkIcon{
+    display: block !important;
+}
+._active {
+    color: #cd1d0b!important;
+    border-bottom: 2px solid #cd1d0b;
+    -moz-border-bottom: 2px solid #cd1d0b;
+    -webkit-border-bottom: 2px solid #cd1d0b;
+    opacity: 1!important;
+}
